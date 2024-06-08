@@ -7,3 +7,7 @@ class carsale(models.Model):
 
     def __str__(self):
         return f"{self.Brand}: {self.Models}"
+
+
+    class Meta:
+        db_table = "Flight"
