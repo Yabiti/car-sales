@@ -10,4 +10,4 @@ class carsale(models.Model):
 
 
     class Meta:
-        db_table = "Flight"
+        db_table = "carsale"
