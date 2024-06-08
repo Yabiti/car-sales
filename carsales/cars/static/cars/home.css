@@ -81,9 +81,9 @@ img{
 }
 
 .but{
-    width: 50px;
+    width: 70px;
     font-size: 14px;
-    margin-left: 5px;
+    margin-left: 3px;
     justify-content: space-between;
     
 }
@@ -92,6 +92,7 @@ img{
     width: 75px;
     font-size: 14px;
     margin-left: 5px;
+    margin: 10px;
     
 }
 
@@ -104,4 +105,8 @@ img{
 
 .cl{
     text-align: center;
+}
+
+p {
+    padding: 10px;
 }
