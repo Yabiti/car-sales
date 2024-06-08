@@ -1,0 +1,113 @@
+{% extends 'cars/layout.html' %}
+{% load static %}
+{% block body %}
+<head>
+    <meta name="viewport" content="width-device-width, intial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Car Sales</title>
+    <link href="{% static 'cars/home.css' %}" rel="stylesheet"></a>
+    <style>
+        #nav{
+            background-image: url('{% static "cars/v8.jpg" %}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0%;
+        }
+     </style>
+ </head>
+</head>
+<body>
+    <div id="nav">
+    <div class="navbar">
+        <ul>
+            <li><a href="#contact">Contact Us</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#cars">cars</a></li>
+        </ul>
+    </div>
+    <div class="head">
+        <h1>Buy Your Dream Car</h1>
+        <p>rertrtrtrtrtrtrtrtrtrtrtrtrtrt<br>dfdfdfdfdfdfdfdfdf</p>
+    </div>
+    <form class="form">
+        <h2 style="color: aliceblue;">Choose Car</h2>
+        {% csrf_token %}
+        Brand: <input type="text" name="Origin"  required></br>
+        Model : <input type="text" name="destination"  required></br>
+        Prize: </br><input type="number" name="destination" required>
+        <button id="button"type="submit">Submit</button>
+    </form>
+    </div>
+    <div class="used">
+        <h2>Used Cars</h2>
+    </div>
+    <div class="box">
+        <img src="{% static 'cars/rav4.jpg' %}">
+        <p>2021 rav4</p>
+        <button class="but">petrol</button>
+        <button class="butt">12,500km</button>
+        <button class="butt">automatic</button></br>
+        <button class="but">black</button>
+        <button class="but">black</button>
+    </div>
+    <div class="box">
+        <img src="{% static 'cars/co.jpeg' %}">
+        <p>2021 Corolla</p>
+        <button class="but">petrol</button>
+        <button class="butt">12,500km</button>
+        <button class="butt">automatic</button></br>
+        <button class="but">black</button>
+        <button class="but">black</button>
+    </div>
+    <div class="box">
+        <img src="{% static 'cars/hi.jpeg' %}">
+        <p>2021 Hilux</p>
+        <button class="but">petrol</button>
+        <button class="butt">12,500km</button>
+        <button class="butt">automatic</button></br>
+        <button class="but">black</button>
+        <button class="but">black</button>
+    </div>
+    <div class="cl"><h2>New Cars</h2></div>
+    <div class="box">
+        <img src="{% static 'cars/v81.jpeg' %}">
+        <p>2024 Toyota Landcruiser</p>
+        <button class="but">petrol</button>
+        <button class="butt">12,500km</button>
+        <button class="butt">automatic</button></br>
+        <button class="but">black</button>
+        <button class="but">black</button>
+    </div>
+    <div class="box">
+        <img src="{% static 'cars/cadi.jpeg' %}">
+        <p>2024 Cadillac</p>
+        <button class="but">petrol</button>
+        <button class="butt">12,500km</button>
+        <button class="butt">automatic</button></br>
+        <button class="but">black</button>
+        <button class="but">black</button>
+    </div>
+    <div class="box">
+        <img src="{% static 'cars/gmc.jpeg' %}">
+        <p>2024 Gmc</p>
+        <button class="but">petrol</button>
+        <button class="butt">12,500km</button>
+        <button class="butt">automatic</button></br>
+        <button class="but">black</button>
+        <button class="but">black</button>
+    </div>
+    <div class="cl"><h2>Sellers</h2></div>
+    <div class="box">
+        <img src="{% static 'cars/rav4.jpg' %}">
+        <p>Hannan</p>
+    </div>
+    <div class="box">
+        <img src="{% static 'cars/rav4.jpg' %}">
+        <p>Mulugeta</p>
+    </div>
+    <div class="box">
+        <img src="{% static 'cars/rav4.jpg' %}">
+        <p>Yohannes</p>
+    </div>
+</body>
+{% endblock %}
