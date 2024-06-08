@@ -7,4 +7,4 @@ def home(request):
     return render(request, 'cars/home.html')
 
 def form(request):
-    return render(request, 'cars/form.html')
+    return render(request, 'cars/about.html')
