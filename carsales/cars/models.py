@@ -6,4 +6,4 @@ class carsale(models.Model):
     Models = models.CharField(max_length=25, blank=False, null=True)
 
     def __str__(self):
-        return "{sel}"
+        return "{self.Brand}: {self.Models}"
