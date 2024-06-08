@@ -6,5 +6,5 @@ from django.http import HttpResponse
 def home(request):
     return render(request, 'cars/home.html')
 
-def form(request):
+def about(request):
     return render(request, 'cars/about.html')
