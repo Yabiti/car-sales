@@ -76,7 +76,21 @@ input{
     text-align: center;
 }
 
-.box{
-    width: 30px;
-    height: 20px;
+img{
+    width: 300px;
+}
+
+.but{
+    width: 50px;
+    font-size: 14px;
+    margin-left: 5px;
+    justify-content: space-between;
+    
+}
+
+.butt{
+    width: 75px;
+    font-size: 14px;
+    margin-left: 5px;
+    
 }
