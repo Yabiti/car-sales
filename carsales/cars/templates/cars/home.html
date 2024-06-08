@@ -1,5 +1,5 @@
 {% extends 'cars/layout.html'}
-
+{% load static %}
 {% block body %}
 <head>
     <meta name="viewport" content="width-device-width, intial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -16,4 +16,12 @@
         }
     </style>
 </head>
+<body>
+    <div class="navbar">
+        <ul>cars</ul>
+        <ul>about</ul>
+        <ul>services</ul>
+        <ul>contact</ul>
+    </div>
+</body>
 {% endblock %}
