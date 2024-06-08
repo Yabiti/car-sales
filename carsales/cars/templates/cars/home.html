@@ -5,8 +5,18 @@
     <meta name="viewport" content="width-device-width, intial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Car Sales</title>
     <link href="{% static 'cars/home.css' %}" rel="stylesheet"></a>
+    <style>
+        #nav{
+            background-image: url('{% static "cars/v8.jpg" %}');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 0%;
+        }
+     </style>
+ </head>
 </head>
 <body>
+    <div id="nav">
     <div class="navbar">
         <ul>
             <li><a href="#contact">Contact Me</a></li>
@@ -27,8 +37,12 @@
         Prize: </br><input type="number" name="destination" required>
         <button id="button"type="submit">Submit</button>
     </form>
-        <div class="used">
-            <h2>Used Cars</h2>
-        </div>
+    </div>
+    <div class="used">
+        <h2>Used Cars</h2>
+    </div>
+    <div class="box">
+        <img src="{% static 'cars/rav4.jpg' %}">
+    </div>
 </body>
 {% endblock %}

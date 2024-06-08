@@ -72,12 +72,11 @@ input{
 
 }
 
-.used {
+.used{
     text-align: center;
-    color: #fff;
-    margin-bottom: 2%;
 }
 
-.container {
-    background: url('{% static "cars/v8.jpg" %}') center / contain no-repeat;
+.box{
+    width: 30px;
+    height: 20px;
 }
