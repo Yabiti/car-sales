@@ -17,6 +17,6 @@ def contact(request):
 def insertuser(request):
     Brand = request.POST['brand']
     Model = request.POST['model']
-    x = 
+    x = carsale(Brand=Brand, Model=Model)
     x.save()
     return render(request, 'cars/home.html')
