@@ -1,0 +1,29 @@
+{% extends 'cars/layout.html' %}
+{% load static %}
+
+{% block body %}
+<body>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="subtitle">Contact Me</h1>
+                    <p>Email@example.com</p>
+                    <p>0945929642</p>
+                    <div class="social-icons">
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                        <a href=""></a>
+                    </div>
+                    <a href="" download class="btn btn2">Download Cv</a>
+                </div>
+                <form class="contact-right" name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+</body>
+{% endblock%}
