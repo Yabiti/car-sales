@@ -3,28 +3,31 @@
 {% block body %}
 <head>
     <meta name="viewport" content="width-device-width, intial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-    <title>Ethiopian Airlines</title>
+    <title>Car Sales</title>
     <link href="{% static 'cars/home.css' %}" rel="stylesheet"></a>
-    <style>
-       h1{
-            background-image: url('{% static "flight/ho.jpg" %}');
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: center;
-            display: flex;
-
-        }
-    </style>
 </head>
 <body>
+    <div class="container">
+        <img src="{% static 'cars/v8.jpg' %}">
+    </div>
     <div class="navbar">
         <ul>
             <li><a href="#contact">Contact Me</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#Portifolio">Portifolio</a></li>
             <li><a href="#about">About</a></li>
-            <li><a href="#header">Home</a></li>
+            <li><a href="#cars">cars</a></li>
         </ul>
     </div>
+    <form class="form">
+        <h2 style="color: aliceblue;">Choose Car</h2>
+        {% csrf_token %}
+        Brand: <input type="text" name="Origin"  required></br>
+        Model : <input type="text" name="destination"  required></br>
+        Prize: </br><input type="number" name="destination" required>
+        <button id="button"type="submit">Submit</button>
+    </form>
+        <div class="used">
+            <h2>Used Cars</h2>
+        </div>
 </body>
 {% endblock %}

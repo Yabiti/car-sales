@@ -8,3 +8,86 @@
     direction: rtl;
 }
 
+.navbar ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    color:black;
+    
+}
+
+.navbar ul li a{
+    text-align: none;
+    color: #fff;
+    text-transform: uppercase;
+    color:black;
+
+}
+
+.navbar ul li::after {
+    content: '';
+    height: 3px;
+    width: 0;
+    background: #009688;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+
+}
+
+.navbar ul li:hover::after {
+    width: 100%;
+}
+
+/*styling form table*/
+.form {
+    width: 390px;
+    height: 300px;
+    position: relative;
+    margin: 2% auto;
+    background: rgba(0,0,0,0.3);
+    padding: 50px;
+    overflow: hidden;
+    margin-left: 700px;
+}
+
+/*styling button*/
+
+/*styling button*/
+button {
+    width: 150px;
+    height: 30px;
+    text-align: center;
+    margin-left: 70px;
+    color: #333;
+}
+
+input{
+    font-size: 1.5em;
+    line-height: 20px;
+    margin: 10px;
+
+
+}
+
+.used {
+    text-align: center;
+    color: #fff;
+    margin-bottom: 2%;
+}
+
+.container {
+    position: relative;
+    background-image: url('{% static "cars/v8.jpg" %}');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 20px; /* Add some padding to the container */
+  }
+  
+  .content {
+    position: relative;
+    z-index: 1; /* Ensure the content is on top of the background */
+  }
