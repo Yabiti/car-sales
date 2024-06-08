@@ -79,15 +79,5 @@ input{
 }
 
 .container {
-    position: relative;
-    background-image: url('{% static "cars/v8.jpg" %}');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    padding: 20px; /* Add some padding to the container */
-  }
-  
-  .content {
-    position: relative;
-    z-index: 1; /* Ensure the content is on top of the background */
-  }
+    background: url('{% static "cars/v8.jpg" %}') center / contain no-repeat;
+}
