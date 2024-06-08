@@ -97,5 +97,11 @@ img{
 
 .box{
     display: inline-block;
-    margin: 20px;
+    margin: 50px;
+    background-color: white;
+    box-shadow: 5px 8px 5px gray;
+}
+
+.cl{
+    text-align: center;
 }
