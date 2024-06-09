@@ -24,7 +24,7 @@
             <li><a href="#cars">cars</a></li>
         </ul>
     </div>
-    <form class="form" name="Choose Car" method="post" action="insertuesr">
+    <form class="form" name="Choose Car" method="post" action="{% url 'insertuser' %}">
         <h2 style="color: aliceblue;">Choose Car</h2>
         {% csrf_token %}
         Brand: <input type="text" name="brand"  required></br>
