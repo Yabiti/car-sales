@@ -13,10 +13,3 @@ def about(request):
 def contact(request):
     return render(request, 'cars/contact.html')
 
-
-def insertuser(request):
-    Brand = request.POST['brand']
-    Model = request.POST['model']
-    x = carsale(Brand=Brand, Model=Model)
-    x.save()
-    return HttpResponse("Tahnks for choosing us!")
