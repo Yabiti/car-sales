@@ -2,12 +2,8 @@ from django.db import models
 
 # Create your models here.
 class carsale(models.Model):
-    Brand = models.CharField(max_length=25 ,blank=False, null=True),
-    Models = models.CharField(max_length=25, blank=False, null=True)
-
-    def __str__(self):
-        return f"{self.Brand}: {self.Models}"
-
+    Model = models.CharField(max_length=25, blank=True, null=False)
+    Brand = models.CharField(max_length=25, blank=True, null=False)
 
     class Meta:
         db_table = "carsale"
