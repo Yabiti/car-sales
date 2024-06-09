@@ -25,7 +25,7 @@
         </ul>
     </div>
     <form class="form" name="Order Car" action="{% url 'insertuser' %}" method="post">
-        <h2 style="color: aliceblue;">Choose Car</h2>
+        <h2 style="color: aliceblue;">Order Car</h2>
         {% csrf_token %}
         Brand: <input type="text" name="brand"  required></br>
         Model: <input type="text" name="model"  required></br>
