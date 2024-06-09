@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render
 from django.http import HttpResponse
 from .models import carsale
 
@@ -14,8 +14,8 @@ def contact(request):
     return render(request, 'cars/contact.html')
 
 def insertuser(request):
-    Brand = request.POST['first name']
-    Model = request.POST['last name']
+    Brand = request.POST['brand']
+    Model = request.POST['model']
     x = carsale(Brand=Brand, Model=Model)
     x.save()
     return HttpResponse("Thanks")
