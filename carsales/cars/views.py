@@ -14,8 +14,8 @@ def contact(request):
     return render(request, 'cars/contact.html')
 
 def insertuser(request):
-    Brand = request.POST['brand']
-    Model = request.POST['model']
+    Brand = request.POST['Brand']
+    Model = request.POST['Model']
     x = carsale(Brand=Brand, Model=Model)
     x.save()
     return HttpResponse("Thanks")
