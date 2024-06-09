@@ -18,4 +18,4 @@ def insertuser(request):
     Model = request.POST['last name']
     x = carsale(Brand=Brand, Model=Model)
     x.save()
-    return render(request, 'flight/home.html')
+    return HttpResponse("Thanks")
