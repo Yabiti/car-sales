@@ -19,4 +19,4 @@ def insertuser(request):
     Model = request.POST['model']
     x = carsale(Brand=Brand, Model=Model)
     x.save()
-    return redirect(request, 'cars/home.html')
+    return HttpResponse("Tahnks for choosing us!")
