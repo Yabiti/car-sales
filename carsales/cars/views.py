@@ -13,3 +13,9 @@ def about(request):
 def contact(request):
     return render(request, 'cars/contact.html')
 
+def insertuser(request):
+    Brand = request.POST['first name']
+    Model = request.POST['last name']
+    x = carsale(Brand=Brand, Model=Model)
+    x.save()
+    return render(request, 'flight/home.html')
