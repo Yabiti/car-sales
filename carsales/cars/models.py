@@ -10,4 +10,4 @@ class carsale(models.Model):
 
     
     class Meta:
-        db_table = "carsales"
+        db_table = "carsale"
